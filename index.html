@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Puflib by romanellicomm</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Puflib</h1>
+        <p>Modular library for manipulating physically-uncloneable functions</p>
+
+        <p class="view"><a href="https://github.com/romanellicomm/PUFlib">View the Project on GitHub <small>romanellicomm/PUFlib</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/romanellicomm/PUFlib/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/romanellicomm/PUFlib/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/romanellicomm/PUFlib">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>Physically unclonable functions (PUFs) return a unique response to a challenge, expose manufacturing variance intrinsic to IC fabrication, and currently require dedicated hardware and proprietary software.</p>
+
+<p>With PUFLib, our goal is to develop an open-source, modular library to use PUFs for data protection using Intel x86 and ARM, a variety of “legacy” and novel PUF plug-ins, and a modular design to allow others to contribute. We also plan to provide seal()/unseal() semantics for device-specific sealed storage, and demonstrate to LEG team to support a data loss prevention (DLP)-type solution.</p>
+
+<p>Our approach includes both legacy and novel sources.</p>
+
+<p><strong>Legacy sources:</strong></p>
+
+<ul>
+<li>SRAM (done on ARES)</li>
+<li>Flash (not done in public)</li>
+<li>FPGA (not done under this effort)</li>
+</ul>
+
+<p><strong>Novel sources:</strong></p>
+
+<ul>
+<li>DDR RAM (new!)</li>
+<li>SMBus EEPROM (new!)</li>
+</ul>
+
+<p>The PUFLib core includes automatic provisioning of hardware-supported PUF sources, error-correcting codes for temp/age variance, and Shamir’s secret sharing for multi-PUF support and additional error tolerance.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/romanellicomm">romanellicomm</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
