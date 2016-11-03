@@ -35,26 +35,32 @@
 
         <p>Physically unclonable functions (PUFs) return a unique response to a challenge, expose manufacturing variance intrinsic to IC fabrication, and currently require dedicated hardware and proprietary software.</p>
 
-        <p>With PUFLib, our goal is to develop an open-source, modular library to use PUFs for data protection using Intel x86 and ARM, a variety of “legacy” and novel PUF plug-ins, and a modular design to allow others to contribute. We also plan to provide seal()/unseal() semantics for device-specific sealed storage, and demonstrate to LEG team to support a data loss prevention (DLP)-type solution.</p>
+        <p>The PUFLib project aims to further the state-of-the-art of PUF research, and provide a simple cross-platform API to utilize, manipulate, and form a trusted sealed storage mechanism based on these constructs.</p>
 
-        <p>Our approach includes both legacy and novel sources.</p>
+        <p>Our goal with PUFLib is to develop an open-source platform for contributions: a modular library to use PUFs for data protection using Intel x86 and ARM, a variety of “legacy” and novel PUF plug-ins, and a modular design to facilitate contributions. We also plan to provide seal()/unseal() semantics for device-specific sealed storage.</p>
 
-        <p>Legacy sources:</p>
-
+        <p>Our approach allows us to incorporate sources such as:
         <ul>
-        <li>SRAM (done on ARES)</li>
-        <li>Flash (not done in public)</li>
-        <li>FPGA (not done under this effort)</li>
+          <li>SRAM</li>
+          <li>Flash</li>
+          <li>FPGA</li>
+          <li>SMBus EEPROM</li>
         </ul>
 
-        <p>Novel sources:</p>
+        <h3><a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Roadmap</h3>
 
-        <ul>
-        <li>DDR RAM (new!)</li>
-        <li>SMBus EEPROM (new!)</li>
-        </ul>
+        <p>End of 2016: Preliminary support for EEPROM on some memory modules</p>
+
+        <p>Middle of 2017: Preliminary support for DDR PUF source, and web cam evaluation for PUF characterization</p>
+
+        <p>End of 2017: Beta support for EEPROM, DDR, and CMOS sensor</p>
+
+        <h3><a id="compilation" class="anchor" href="#compilation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compilation</h3>
+
+        <p>Documentation can be generated with <code>make docs</code> ; <code>make all</code> will build PUFLib for the system.</p>
 
         <p>The PUFLib core includes automatic provisioning of hardware-supported PUF sources, error-correcting codes for temp/age variance, and Shamir’s secret sharing for multi-PUF support and additional error tolerance.</p>
+
       </section>
 
       <footer>
